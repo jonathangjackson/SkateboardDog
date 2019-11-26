@@ -11,6 +11,7 @@ public class CameraMove : MonoBehaviour
     private int dest;
     private float angle;
     public float speed;
+    private float maxSpeed;
     public float jump;
     public GameObject currentDog;
     private string curDogName;
@@ -19,25 +20,64 @@ public class CameraMove : MonoBehaviour
     private Vector3 offScreen;
     private float[] staminas;
     private float staminaRate;
+    private float dogSpeed;
+    private bool staminaOut;
+
+    private float acceleration = 1;
+    public GameObject speedText;
 
     // Start is called before the first frame update
     void Start()
     {
+        staminaOut = false;
         staminas = new float[2];
         staminas[0] = 100;
         staminas[1] = 100;
         staminaRate = 1.0f;
+        maxSpeed = 60;
         dest = 0;
         offScreen = new Vector3(0, 0, -510);
         curDogName = "Doberman";
-        Doberman.GetComponent<Transform>().position = currentDog.GetComponent<Transform>().position;
-        Doberman.GetComponent<Transform>().SetParent(currentDog.GetComponent<Transform>());
+        if ((this.name.CompareTo("Player") == 0))
+        {
+            Doberman.GetComponent<Transform>().position = currentDog.GetComponent<Transform>().position;
+            Doberman.GetComponent<Transform>().SetParent(currentDog.GetComponent<Transform>());
+        }
         nextWayPoint();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if ((this.name.CompareTo("Player") == 0))
+        {
+            switch (curDogName)
+            {
+                case "Doberman":
+                    if(staminas[0]< 0)
+                    {
+                        staminaOut = true;
+                    }
+                    break;
+                case "Greyhound":
+                    if (staminas[1] < 0)
+                    {
+                        staminaOut = true;
+                    }
+                    break;
+            }
+            if (!staminaOut)
+            {
+                this.dogSpeed = Mathf.Lerp(this.dogSpeed, this.maxSpeed, this.acceleration * Time.deltaTime);
+                this.speed = Mathf.Lerp(this.speed, this.dogSpeed, this.acceleration * Time.deltaTime);
+            }
+            else
+            {
+                this.speed = Mathf.Lerp(this.speed, 0, 0.2f * Time.deltaTime);
+            }
+            speedText.GetComponent<Text>().text = "Speed: " + Mathf.Round(this.speed);
+        }
         //this.transform.position.Set(this.transform.position.x, this.transform.position.y, this.transform.position.z + (speed * Time.deltaTime));
         this.GetComponent<Transform>().position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + (speed * Time.deltaTime));
         //this.GetComponent<Transform>().rotation = new Quaternion(this.GetComponent<Transform>().rotation.x, this.GetComponent<Transform>().rotation.y + ((Time.deltaTime * angle) * 0.1f), this.GetComponent<Transform>().rotation.z, this.GetComponent<Transform>().rotation.w);
@@ -117,17 +157,21 @@ public class CameraMove : MonoBehaviour
         {
             case "Doberman":
                 curDogName = "Doberman";
-                this.speed = 40;
+                this.dogSpeed = 20;
                 this.jump = 10;
-                staminaRate = 0.5f;
+                this.maxSpeed = 80;
+                this.acceleration = 5;
+                staminaRate = 4.25f;
                 Doberman.GetComponent<Transform>().position = currentDog.GetComponent<Transform>().position;
                 Doberman.GetComponent<Transform>().SetParent(currentDog.GetComponent<Transform>());
                 break;
             case "Greyhound":
                 curDogName = "Greyhound";
-                this.speed = 80;
+                this.dogSpeed = 20;
+                this.maxSpeed = 90;
                 this.jump = 2;
-                staminaRate = 1.5f;
+                this.acceleration = 2;
+                staminaRate = 7.2f;
                 Greyhound.GetComponent<Transform>().position = currentDog.GetComponent<Transform>().position;
                 Greyhound.GetComponent<Transform>().SetParent(currentDog.GetComponent<Transform>());
                 break;
