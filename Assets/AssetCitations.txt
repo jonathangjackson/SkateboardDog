@@ -3,3 +3,5 @@ Assets being used from somewhere else:
 Idle - https://www.mixamo.com/#/?page=1&query=idle&type=Motion%2CMotionPack
 Skateboarding Base - https://www.mixamo.com/#/?page=1&query=skateboard&type=Motion%2CMotionPack
 Man Geometry - https://www.turbosquid.com/FullPreview/Index.cfm/ID/1387761
+
+Package label - https://www.fedex.com/en-us/service-guide/return-shipments.html
