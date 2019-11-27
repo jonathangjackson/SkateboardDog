@@ -1,6 +1,7 @@
 Assets being used from somewhere else:
 
 Idle - https://www.mixamo.com/#/?page=1&query=idle&type=Motion%2CMotionPack
+Stumble - https://www.mixamo.com/#/?page=1&query=stumble
 Skateboarding Base - https://www.mixamo.com/#/?page=1&query=skateboard&type=Motion%2CMotionPack
 Man Geometry - https://www.turbosquid.com/FullPreview/Index.cfm/ID/1387761
 
