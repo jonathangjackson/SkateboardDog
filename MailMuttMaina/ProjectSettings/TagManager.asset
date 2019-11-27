@@ -9,6 +9,7 @@ TagManager:
   - package
   - player
   - Truck
+  - SpawnDog
   layers:
   - Default
   - TransparentFX

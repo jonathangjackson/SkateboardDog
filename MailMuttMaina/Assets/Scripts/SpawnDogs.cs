@@ -11,7 +11,7 @@ public class SpawnDogs : MonoBehaviour
     void OnTriggerEnter()
     {
         Debug.Log("SPAWN");
-        GameObject newDog = Instantiate(prefab, SpawnPoint.position, SpawnPoint.rotation);
+        //GameObject newDog = Instantiate(prefab, SpawnPoint.position, SpawnPoint.rotation);
         //newDog.gameObject.tag = "NewDog";
 
         //newDog.AddComponent<Animation>();

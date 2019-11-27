@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Delete : MonoBehaviour
 {
-    /*
+    
     public Transform SpawnPoint;
-    public GameObject prefab;
-    */
+    public GameObject[] dogPrefabs;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -30,12 +30,24 @@ public class Delete : MonoBehaviour
             float distance = this.GetComponent<Transform>().position.x - (-10.77f);
             Debug.Log("YOU WON! Score: " + Mathf.Round(distance));
         }
-        /*
-        if (other.gameObject.tag.CompareTo("Spawn") == 0)
+        
+        if (other.gameObject.tag.CompareTo("SpawnDog") == 0)
         {
             Debug.Log("SPAWN");
-            GameObject newDog = Instantiate(prefab, SpawnPoint.position, SpawnPoint.rotation);
+            GameObject newDog = null;
+            switch (Random.Range(0, 3))
+            {
+                case 0:
+                    newDog = Instantiate(dogPrefabs[0], SpawnPoint.position, SpawnPoint.rotation);
+                    break;
+                case 1:
+                    newDog = Instantiate(dogPrefabs[1], SpawnPoint.position, SpawnPoint.rotation);
+                    break;
+                case 2:
+                    newDog = Instantiate(dogPrefabs[2], SpawnPoint.position, SpawnPoint.rotation);
+                    break;
+            }
 
-        }*/
+        }
     }
 }

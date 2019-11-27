@@ -48,16 +48,21 @@ public class Leash : MonoBehaviour
 
                 if (hit.transform.gameObject.tag == "NewDog")
                 {
+                    Debug.Log("HIT");
                     dogs[0].SetActive(false);
                     dogs[1] = dogs[0];
+                    hit.transform.GetComponent<Rigidbody>().constraints = new RigidbodyConstraints();
                     hit.transform.GetComponent<Dog>().setActive(true);
-                    dogs[0] = hit.transform.gameObject;
-                    
+                    hit.transform.gameObject.GetComponent<ConstantForce>().force = new Vector3(0, 0, 0);
+                    hit.transform.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                    hit.transform.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
                     hit.transform.gameObject.transform.position = dogPosition.transform.position;
+                    hit.transform.position = new Vector3(hit.transform.position .x, - 1.16f, hit.transform.position.z);
                     hit.transform.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
                     hit.transform.gameObject.transform.parent = dogPosition.transform;
                     GetComponent<SpringJoint>().connectedBody = dogPosition.GetComponent<Rigidbody>();
                     hit.transform.gameObject.tag = "Dog";
+                    dogs[0] = hit.transform.gameObject;
                 }
                 
             }
