@@ -8,6 +8,7 @@ TagManager:
   - Dog
   - package
   - player
+  - Truck
   layers:
   - Default
   - TransparentFX

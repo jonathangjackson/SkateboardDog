@@ -24,6 +24,9 @@ public class Movement : MonoBehaviour
     {
         this.speed = s;
         speedText.GetComponent<Text>().text = "Speed: " + Mathf.Round(speed);
+
+        if (Mathf.Round(this.speed) <= 0)
+            Debug.Log("GAME OVER");
     }
 
     public float getSpeed()
