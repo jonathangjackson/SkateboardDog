@@ -15,13 +15,13 @@ public class Translate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("d") && z < 20)
+        if (Input.GetKey("d"))//&& z < 20
         {
             transform.position += transform.forward * Time.deltaTime * -10;
             //this.GetComponent<Transform>().position = new Vector3(this.transform.position.x , this.transform.position.y, this.transform.position.z - (10 * Time.deltaTime));
             z++;
         }
-        if (Input.GetKey("a") && z > -20)
+        if (Input.GetKey("a"))// && z > -20
         {
             z--;
 

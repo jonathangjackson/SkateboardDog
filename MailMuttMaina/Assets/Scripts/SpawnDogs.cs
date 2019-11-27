@@ -10,17 +10,18 @@ public class SpawnDogs : MonoBehaviour
 
     void OnTriggerEnter()
     {
+        Debug.Log("SPAWN");
         GameObject newDog = Instantiate(prefab, SpawnPoint.position, SpawnPoint.rotation);
-        newDog.gameObject.tag = "NewDog";
+        //newDog.gameObject.tag = "NewDog";
 
-        newDog.AddComponent<Animation>();
-        newDog.AddComponent<Animator>();
+        //newDog.AddComponent<Animation>();
+        //newDog.AddComponent<Animator>();
+        
+        //Animator animator = newDog.GetComponent<Animator>();
 
-        Animator animator = newDog.GetComponent<Animator>();
+        //animator.runtimeAnimatorController = Resources.Load("Animations/Dog2") as RuntimeAnimatorController;
 
-        animator.runtimeAnimatorController = Resources.Load("Animations/Dog2") as RuntimeAnimatorController;
-
-        newDog.GetComponent<Animation>().GetComponent<Animation>().Play("Dog Run");
+        //newDog.GetComponent<Animation>().GetComponent<Animation>().Play("Dog Run");
 
     }
 }

@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations;
+using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
     private int sourcePos;
     public float speed;
     public Transform[] waypoints;
+    public GameObject speedText;
     private Quaternion endPoint;
     private int count;
     private float distanceError = 10.0f;
@@ -21,15 +23,24 @@ public class Movement : MonoBehaviour
     public void setSpeed(float s)
     {
         this.speed = s;
+        speedText.GetComponent<Text>().text = "Speed: " + Mathf.Round(speed);
+    }
+
+    public float getSpeed()
+    {
+        return this.speed;
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position += transform.right * Time.deltaTime * speed;
-        //float dis = Vector3.Distance(transform.position, waypoints[count].position);
+        
+        
+        /*Rotation
+        float dis = Vector3.Distance(transform.position, waypoints[count].position);
         float step = speed * Time.deltaTime;
-        /*
+        
         if(dis < distanceError)
         {
             Debug.Log("IN");

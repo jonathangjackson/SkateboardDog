@@ -9,7 +9,6 @@ public class Leash : MonoBehaviour
     public float fireRate = 0.25f;
     public float leashRange = 50f;
     public Transform leashEnd;
-    public GameObject dog;
     public Camera leashCam;
 
     private WaitForSeconds leashDuration = new WaitForSeconds(0.7f);
@@ -17,11 +16,16 @@ public class Leash : MonoBehaviour
     private float nextFire;
 
     public GameObject currentDog;
+    public GameObject dogPosition;
+
+    GameObject[] dogs = new GameObject[3];
+    //private List<GameObject> dogs;
 
     // Start is called before the first frame update
     void Start()
     {
         leashLine = GetComponent<LineRenderer>();
+        dogs[0] = currentDog;
     }
 
     // Update is called once per frame
@@ -44,10 +48,15 @@ public class Leash : MonoBehaviour
 
                 if (hit.transform.gameObject.tag == "NewDog")
                 {
-                    hit.transform.gameObject.transform.position = currentDog.transform.position;
+                    dogs[0].SetActive(false);
+                    dogs[1] = dogs[0];
+                    hit.transform.GetComponent<Dog>().setActive(true);
+                    dogs[0] = hit.transform.gameObject;
+                    
+                    hit.transform.gameObject.transform.position = dogPosition.transform.position;
                     hit.transform.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-                    hit.transform.gameObject.transform.parent = currentDog.transform;
-                    GetComponent<SpringJoint>().connectedBody = currentDog.GetComponent<Rigidbody>();
+                    hit.transform.gameObject.transform.parent = dogPosition.transform;
+                    GetComponent<SpringJoint>().connectedBody = dogPosition.GetComponent<Rigidbody>();
                     hit.transform.gameObject.tag = "Dog";
                 }
                 
@@ -58,6 +67,11 @@ public class Leash : MonoBehaviour
             }
         }
         
+    }
+
+    public GameObject getCurrentDog()
+    {
+        return dogs[0];
     }
 
     private IEnumerator leashEffect()
