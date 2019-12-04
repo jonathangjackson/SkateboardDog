@@ -30,7 +30,7 @@ public class Movement : MonoBehaviour
         if (Mathf.Round(this.speed) <= 0)
         {
             Debug.Log("GAME OVER");
-            SceneManager.LoadScene("LoseScreen");
+            //SceneManager.LoadScene("LoseScreen");
         }
            
     }
