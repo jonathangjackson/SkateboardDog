@@ -14,6 +14,7 @@ public class Menus : MonoBehaviour
 
     void Start()
     {
+        currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
         
         if(sceneName == "WinScreen")
