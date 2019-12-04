@@ -10,11 +10,10 @@ public class Menus : MonoBehaviour
 
     GameObject scoreText;
 
-    void onStart()
+    void Start()
     {
         scoreText = GameObject.Find("Score");
         scoreText.GetComponent<Text>().text = "Score: " + PlayerPrefs.GetString("Score");
-
     }
 
     public void StartGame()
