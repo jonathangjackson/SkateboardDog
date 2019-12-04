@@ -9,11 +9,19 @@ public class Menus : MonoBehaviour
 {
 
     GameObject scoreText;
+    Scene currentScene;
+    string sceneName;
 
     void Start()
     {
-        scoreText = GameObject.Find("Score");
-        scoreText.GetComponent<Text>().text = "Score: " + PlayerPrefs.GetString("Score");
+        sceneName = currentScene.name;
+        
+        if(sceneName == "WinScreen")
+        {
+            scoreText = GameObject.Find("Score");
+            scoreText.GetComponent<Text>().text = "Score: " + PlayerPrefs.GetString("Score");
+        }
+        
     }
 
     public void StartGame()
