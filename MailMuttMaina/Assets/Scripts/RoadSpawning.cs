@@ -22,8 +22,12 @@ public class RoadSpawning : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if(collision.tag == "roadSpawn"){
+        if(collision.tag == "SpawnRoad"){
 
+            Destroy(roadA);
+            roadA = roadB;
+            Vector3 roadPos = roadA.GetComponent<Transform>().position;
+            roadB = Instantiate(roadB, new Vector3(roadPos.x + 1400, roadPos.y, roadPos.z), Quaternion.identity);
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
@@ -27,7 +28,11 @@ public class Movement : MonoBehaviour
         speedText.GetComponent<Text>().text = "Speed: " + Mathf.Round(speed);
 
         if (Mathf.Round(this.speed) <= 0)
+        {
             Debug.Log("GAME OVER");
+            SceneManager.LoadScene("LoseScreen");
+        }
+           
     }
 
     public float getSpeed()
