@@ -30,7 +30,7 @@ public class Delete : MonoBehaviour
         {
             float distance = this.GetComponent<Transform>().position.x - (-10.77f);
             Debug.Log("YOU WON! Score: " + Mathf.Round(distance));
-            //SceneManager.LoadScene("WinScreen");
+            SceneManager.LoadScene("WinScreen");
         }
         
         if (other.gameObject.tag.CompareTo("SpawnDog") == 0)
