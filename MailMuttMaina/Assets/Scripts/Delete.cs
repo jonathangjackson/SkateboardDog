@@ -30,6 +30,7 @@ public class Delete : MonoBehaviour
         {
             float distance = this.GetComponent<Transform>().position.x - (-10.77f);
             Debug.Log("YOU WON! Score: " + Mathf.Round(distance));
+            PlayerPrefs.SetString("Score", distance.ToString());
             SceneManager.LoadScene("WinScreen");
         }
         
