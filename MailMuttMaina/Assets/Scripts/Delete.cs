@@ -3,16 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class Delete : MonoBehaviour
 {
     
     public Transform SpawnPoint;
     public GameObject[] dogPrefabs;
-    
+
+    AudioClip chi;
+    public AudioSource chiSource;
+
+    AudioClip dob;
+    public AudioSource dobSource;
+
+    AudioClip grey;
+    public AudioSource greySource;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Screen.SetResolution(2560, 1440, true);
+
     }
 
     void OnCollisionEnter(Collision collision)
@@ -42,12 +53,15 @@ public class Delete : MonoBehaviour
             switch (Random.Range(0, 3))
             {
                 case 0:
+                    chiSource.Play();
                     newDog = Instantiate(dogPrefabs[0], spawn.position, spawn.rotation);
                     break;
                 case 1:
+                    dobSource.Play();
                     newDog = Instantiate(dogPrefabs[1], spawn.position, spawn.rotation);
                     break;
                 case 2:
+                    greySource.Play();
                     newDog = Instantiate(dogPrefabs[2], spawn.position, spawn.rotation);
                     break;
             }

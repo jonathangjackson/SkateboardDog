@@ -14,6 +14,7 @@ public class Menus : MonoBehaviour
 
     void Start()
     {
+        Screen.SetResolution(2560, 1440, true);
         currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
         
