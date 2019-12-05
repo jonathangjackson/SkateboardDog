@@ -1,9 +1,9 @@
-Assets being used from somewhere else:
+Assets used from outside sources:
 
 Idle - https://www.mixamo.com/#/?page=1&query=idle&type=Motion%2CMotionPack
 Stumble - https://www.mixamo.com/#/?page=1&query=stumble
 Skateboarding Base - https://www.mixamo.com/#/?page=1&query=skateboard&type=Motion%2CMotionPack
-Man Geometry - https://www.turbosquid.com/FullPreview/Index.cfm/ID/1387761
+Skateboarding Man Geometry - https://www.turbosquid.com/FullPreview/Index.cfm/ID/1387761
 
 Package label - https://www.fedex.com/en-us/service-guide/return-shipments.html
 
@@ -17,3 +17,7 @@ https://www.turbosquid.com/FullPreview/Index.cfm/ID/795483
 https://www.turbosquid.com/FullPreview/Index.cfm/ID/408090
 https://www.turbosquid.com/FullPreview/Index.cfm/ID/1137854
 https://www.turbosquid.com/FullPreview/Index.cfm/ID/1137854
+
+
+Unity Packages
+https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353
