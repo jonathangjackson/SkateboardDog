@@ -422,11 +422,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -496,6 +491,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (11)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -612,11 +612,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -687,6 +682,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.10250736
       objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_RenderMode
@@ -741,11 +741,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (33)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -815,6 +810,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (33)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -903,6 +903,8 @@ MonoBehaviour:
   speed: 70
   waypoints: []
   speedText: {fileID: 2583631826383116680}
+  musicSource: {fileID: 0}
+  skateSource: {fileID: 0}
 --- !u!1 &262226031
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,11 +942,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (27)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1014,6 +1011,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (27)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -1206,6 +1208,7 @@ MonoBehaviour:
   leashCam: {fileID: 459763142}
   currentDog: {fileID: 558233258}
   dogPosition: {fileID: 605475670}
+  ropeSource: {fileID: 321692638}
 --- !u!120 &321692634
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1346,6 +1349,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roadA: {fileID: 8296172667750040625}
   roadB: {fileID: 1382663091}
+--- !u!82 &321692638
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321692629}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: db52b103a0638194d82e6554186be120, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &329887381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1744,11 +1843,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (41)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1818,6 +1912,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (41)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -1976,11 +2075,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2050,6 +2144,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -2329,11 +2428,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (23)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2403,6 +2497,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (23)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -2631,6 +2730,8 @@ MonoBehaviour:
   speed: 70
   waypoints: []
   speedText: {fileID: 0}
+  musicSource: {fileID: 0}
+  skateSource: {fileID: 0}
 --- !u!4 &661624760
 Transform:
   m_ObjectHideFlags: 0
@@ -2682,11 +2783,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2757,6 +2853,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.10250736
       objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_RenderMode
@@ -2781,11 +2882,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (21)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2855,6 +2951,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (21)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -3614,11 +3715,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (35)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3688,6 +3784,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (35)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -3917,11 +4018,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (19)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3991,6 +4087,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (19)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -4115,11 +4216,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4189,6 +4285,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (5)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -4316,6 +4417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1180114697}
   - component: {fileID: 1180114698}
+  - component: {fileID: 1180114699}
   m_Layer: 0
   m_Name: packageSpawn
   m_TagString: Untagged
@@ -4354,6 +4456,103 @@ MonoBehaviour:
   - {fileID: 2061833747941556814, guid: 838fe39b930cc2d449f59e003c6fed1b, type: 3}
   - {fileID: 5848885518015997145, guid: bc527b6ed3dfaf7488a947de827a0d53, type: 3}
   - {fileID: 9083505216746229985, guid: 47226f5a404144d4890a813d0a85f860, type: 3}
+  packageSource: {fileID: 1180114699}
+--- !u!82 &1180114699
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180114696}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d9d0cfe1429d8ec45aa82f40de996a8d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 80
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1188743741 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 86aba9bcd3003e74994a3997ef816403,
@@ -4542,11 +4741,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4617,6 +4811,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.10250736
       objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (17)
+      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_RenderMode
@@ -4641,11 +4840,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4715,6 +4909,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (15)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -4798,11 +4997,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (43)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4872,6 +5066,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (43)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -5639,11 +5838,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (45)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5713,6 +5907,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (45)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -5841,6 +6040,8 @@ GameObject:
   - component: {fileID: 1617397571}
   - component: {fileID: 1617397573}
   - component: {fileID: 1617397572}
+  - component: {fileID: 1617397574}
+  - component: {fileID: 1617397575}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5897,6 +6098,200 @@ MonoBehaviour:
   speed: 20
   waypoints: []
   speedText: {fileID: 2583631826383116680}
+  musicSource: {fileID: 1617397574}
+  skateSource: {fileID: 1617397575}
+--- !u!82 &1617397574
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617397570}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8db670c04153b0142a4f1e33078c8e42, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1617397575
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617397570}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: dd5a214629467ff4ea06c3caadc4bc5a, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.4
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1657090008
 GameObject:
   m_ObjectHideFlags: 0
@@ -6067,11 +6462,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (25)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6141,6 +6531,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (25)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -6348,11 +6743,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (29)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6423,6 +6813,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.10250736
       objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (29)
+      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_RenderMode
@@ -6447,11 +6842,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (31)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6521,6 +6911,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (31)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -6640,11 +7035,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (39)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6714,6 +7104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (39)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -6868,11 +7263,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6942,6 +7332,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (9)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -7392,11 +7787,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7466,6 +7856,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.10250742
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -7620,11 +8015,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1954908671}
     m_Modifications:
-    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
-        type: 3}
-      propertyPath: m_Name
-      value: LampPostLight (37)
-      objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127533, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7694,6 +8084,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.10250736
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859603752903127523, guid: 61444845136586943b7a5f2c73fa7e90,
+        type: 3}
+      propertyPath: m_Name
+      value: LampPostLight (37)
       objectReference: {fileID: 0}
     - target: {fileID: 6859603752903127532, guid: 61444845136586943b7a5f2c73fa7e90,
         type: 3}
@@ -8034,7 +8429,7 @@ Canvas:
   m_GameObject: {fileID: 2583631827334896249}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0

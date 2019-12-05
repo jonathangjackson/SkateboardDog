@@ -14,12 +14,21 @@ public class Movement : MonoBehaviour
     private Quaternion endPoint;
     private int count;
     private float distanceError = 10.0f;
+    AudioClip gameMusic;
+    public AudioSource musicSource;
+
+    AudioClip skate;
+    public AudioSource skateSource;
 
     // Start is called before the first frame update
     void Start()
     {
         count = 0;
         //endPoint = waypoints[0].rotation;
+        musicSource.Play();
+        musicSource.loop = true;
+        skateSource.Play();
+        skateSource.loop = true;
     }
 
     public void setSpeed(float s)

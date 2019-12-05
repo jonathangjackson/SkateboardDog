@@ -18,6 +18,9 @@ public class Leash : MonoBehaviour
     public GameObject currentDog;
     public GameObject dogPosition;
 
+    AudioClip rope;
+    public AudioSource ropeSource;
+
     GameObject[] dogs = new GameObject[3];
     //private List<GameObject> dogs;
 
@@ -33,6 +36,7 @@ public class Leash : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && Time.time > nextFire)
         {
+            ropeSource.Play();
             nextFire = Time.time + fireRate;
 
             StartCoroutine(leashEffect());

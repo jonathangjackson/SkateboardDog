@@ -8,6 +8,8 @@ public class ThrowObjects : MonoBehaviour
     private float lastTime;
     GameObject clone;
     private float randWait = 0;
+    AudioClip package;
+    public AudioSource packageSource;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,7 @@ public class ThrowObjects : MonoBehaviour
                 GameObject clone = null;
                 int packageSpawned = Random.Range(0, packages.Length);
                 clone = Instantiate(packages[packageSpawned], new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, GetComponent<Transform>().position.z), Quaternion.identity);
+                packageSource.Play();
                 clone.GetComponent<Rigidbody>().AddForce(Random.Range(100, 500), Random.Range(0, 20), Random.Range(-400, 400));
                 Destroy(clone, 10.0f);
 
