@@ -49,7 +49,7 @@ public class TimeOfDay : MonoBehaviour
             }
             lampPostLight = false;
         }
-        if(scaleX % 2 > 1.4f || scaleX %2 < 0.4f)
+        if(scaleX % 2 > 1.4f || scaleX %2 < 0.2f)
         {
             lampPostLight = true;
         }

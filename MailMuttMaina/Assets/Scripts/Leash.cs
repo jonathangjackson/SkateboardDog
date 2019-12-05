@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Leash : MonoBehaviour
@@ -36,6 +37,17 @@ public class Leash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Main");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("StartMenu");
+        }
+
         if (Input.GetButtonDown("Fire1") && Time.time > nextFire)
         {
             ropeSource.Play();
@@ -62,6 +74,7 @@ public class Leash : MonoBehaviour
                     hit.transform.gameObject.GetComponent<ConstantForce>().force = new Vector3(0, 0, 0);
                     hit.transform.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
                     hit.transform.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+                    hit.transform.gameObject.tag = null;
                     hit.transform.gameObject.transform.position = dogPosition.transform.position;
                     hit.transform.position = new Vector3(hit.transform.position .x, - 1.16f, hit.transform.position.z);
                     hit.transform.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
