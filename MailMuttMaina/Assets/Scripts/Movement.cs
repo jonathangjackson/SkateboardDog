@@ -23,7 +23,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Screen.SetResolution(2560, 1440, true);
+        //Screen.SetResolution(2560, 1440, true);
 
         count = 0;
         //endPoint = waypoints[0].rotation;
